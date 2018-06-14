@@ -60,7 +60,7 @@ public class DoublyLinkedList<E> {
 	    addBetween(e, header, header.getNext());    // place just after the header
 	  }
 
-	  public void addLast(E e) {
+	  public void add(E e) {
 	    addBetween(e, trailer.getPrev(), trailer);  // place just before the trailer
 	  }
 
@@ -104,6 +104,19 @@ public class DoublyLinkedList<E> {
 	    sb.append(")");
 	    return sb.toString();
 	  }
+	  
+	  public String toString(int i, int j) {
+		    StringBuilder sb = new StringBuilder("");
+		    Node<E> walk = loc(i).getNext();
+		    while (walk != loc(j)) {
+		      sb.append(walk.getElement());
+		      walk = walk.getNext();
+		      if (walk != trailer)
+		        sb.append(" - ");
+		    }
+		    return sb.toString();
+		  }
+	  
 	  
 	  public String ReverseToString() {
 			StringBuilder sb = new StringBuilder("(");
