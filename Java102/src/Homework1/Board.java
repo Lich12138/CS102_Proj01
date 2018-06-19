@@ -10,6 +10,10 @@ public class Board {
 		}
 	}
 	
+	public int score(int loc) {
+		return dll.loc(loc).getElement().intValue();
+	}
+	
 	public void printBoard() {
 		System.out.print("Start - ");
 		dll.toString(0, 8);
@@ -21,7 +25,9 @@ public class Board {
 	}
 	
 	public void printLoc() {
-		
+		//show where the plays are
+		//Q: how to determine how many players
+		//Q: how to get the parameter
 	}
 	
 }

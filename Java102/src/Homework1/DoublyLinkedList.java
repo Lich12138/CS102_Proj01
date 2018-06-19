@@ -2,7 +2,7 @@ package Homework1;
 
 public class DoublyLinkedList<E> {
 	
-	private static class Node<E> {
+	public static class Node<E> {
 		//node is static so that it cannot matter with the variables in DDL
 		//private and static makes Node class independent 
 
