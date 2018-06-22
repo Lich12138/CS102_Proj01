@@ -166,6 +166,16 @@ public class DoublyLinkedList<E> {
 		  swap(loc(a), loc(b));
 	  }
 	  
+	  public int length() {
+		  Node<E> walk = header.getNext();
+		  int d = 0;
+		  while(walk != trailer) {
+			  d ++;
+			  walk = walk.getNext();
+		  }
+		  return d;
+	  }
+	  
 }
 
 

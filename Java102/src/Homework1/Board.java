@@ -5,6 +5,7 @@ public class Board {
 	
 	public Board() {
 		Integer[] arr = {5, 10, 8, 10, 7, 5, 9, 10, 6, 7, 10, 6, 5, 8, 9, 5, 10, 5, 9, 6, 8, 7, 10, 6, 8};
+//		Integer[] arr = {5, 10, 8, 10, 7};
 		for(int i : arr) {
 			dll.add(i);
 		}
@@ -28,6 +29,10 @@ public class Board {
 		//show where the plays are
 		//Q: how to determine how many players
 		//Q: how to get the parameter
+	}
+	
+	public int length() {
+		return dll.length();
 	}
 	
 }
